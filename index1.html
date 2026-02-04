@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBIT Mumbai | SGPA Engine</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-blobs"></div>
+
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="logo">DBIT ADITYA</div>
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+      <h1>SGPA <span class="accent">Engine</span></h1>
+      <p>Computer Engineering | Semester I (MU Pattern)</p>
+    </header>
+
+    <div class="calculator-card">
+      <div class="input-grid">
+        <div class="subject-row">
+          <div class="sub-info">
+            <label for="maths">Engg. Mathematics-I</label>
+            <span class="credits">4.0 Credits</span>
+          </div>
+          <input type="number" id="maths" placeholder="Marks" min="0" max="100">
+        </div>
+
+        <div class="subject-row">
+          <div class="sub-info">
+            <label for="physics">Applied Physics-I</label>
+            <span class="credits">2.0 Credits</span>
+          </div>
+          <input type="number" id="physics" placeholder="Marks" min="0" max="100">
+        </div>
+
+        <div class="subject-row">
+          <div class="sub-info">
+            <label for="chemistry">Applied Chemistry-I</label>
+            <span class="credits">2.0 Credits</span>
+          </div>
+          <input type="number" id="chemistry" placeholder="Marks" min="0" max="100">
+        </div>
+
+        <div class="subject-row">
+          <div class="sub-info">
+            <label for="eg">Engg. Graphics</label>
+            <span class="credits">3.0 Credits</span>
+          </div>
+          <input type="number" id="eg" placeholder="Marks" min="0" max="100">
+        </div>
+
+        <div class="subject-row">
+          <div class="sub-info">
+            <label for="bede">B.E.D.E.</label>
+            <span class="credits">3.0 Credits</span>
+          </div>
+          <input type="number" id="bede" placeholder="Marks" min="0" max="100">
+        </div>
+      </div>
+
+      <button id="calcBtn" onclick="calculateSGPA()">Compute SGPA</button>
+
+      <div id="resultWrapper" class="result-display">
+        <span id="resultLabel">Ready for Calculation</span>
+        <div id="resultValue">0.00</div>
+      </div>
+    </div>
+
+    <footer>
+      DBIT First Year Project • Mumbai University Choice Based System
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
