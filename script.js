@@ -1,11 +1,11 @@
 
 function getGradePoint(percentage) {
-    if (percentage >= 80) return 10; 
-    if (percentage >= 75) return 9;  
-    if (percentage >= 70) return 8;  
-    if (percentage >= 60) return 7;  
-    if (percentage >= 50) return 6;  
-    if (percentage >= 45) return 5;  
+    if (percentage >= 90) return 10; 
+    if (percentage >= 80) return 9;  
+    if (percentage >= 75) return 8;  
+    if (percentage >= 70) return 7;  
+    if (percentage >= 60) return 6;  
+    if (percentage >= 50) return 5;  
     if (percentage >= 40) return 4;  
     return 0; 
 }
@@ -115,3 +115,4 @@ window.addEventListener('DOMContentLoaded', () => {
         icon.innerText = savedTheme === "dark" ? "🌙" : "☀️";
     }
 });
+
