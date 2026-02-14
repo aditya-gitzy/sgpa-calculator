@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DBIT Mumbai | SGPA Engine</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Style1.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,50 +20,100 @@
         </button>
       </div>
       <h1>SGPA <span class="accent">Engine</span></h1>
-      <p>Computer Engineering | Semester I (DBIT Pattern)</p>
+      <p>Computer Engineering | Semester I (New Syllabus)</p>
     </header>
 
     <div class="calculator-card">
       <div class="input-grid">
-        <div class="subject-row">
-          <div class="sub-info">
-            <label for="maths">Engg. Mathematics-I</label>
-            <span class="credits">4.0 Credits</span>
+        
+        <div class="subject-group">
+          <div class="group-title">Engg. Mathematics-I</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory</label><span class="credits">100 Marks | 3.0 Cr</span></div>
+            <input type="number" id="maths_th" placeholder="/100" min="0" max="100">
           </div>
-          <input type="number" id="maths" placeholder="Marks" min="0" max="100">
+          <div class="subject-row">
+            <div class="sub-info"><label>Tutorial</label><span class="credits">25 Marks | 1.0 Cr</span></div>
+            <input type="number" id="maths_tw" placeholder="/25" min="0" max="25">
+          </div>
         </div>
 
-        <div class="subject-row">
-          <div class="sub-info">
-            <label for="physics">Applied Physics-I</label>
-            <span class="credits">2.5 Credits</span>
+        <div class="subject-group">
+          <div class="group-title">Applied Physics-I</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory</label><span class="credits">100 Marks | 2.0 Cr</span></div>
+            <input type="number" id="phy_th" placeholder="/100" min="0" max="100">
           </div>
-          <input type="number" id="physics" placeholder="Marks" min="0" max="100">
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab</label><span class="credits">25 Marks | 0.5 Cr</span></div>
+            <input type="number" id="phy_lab" placeholder="/25" min="0" max="25">
+          </div>
         </div>
 
-        <div class="subject-row">
-          <div class="sub-info">
-            <label for="chemistry">Applied Chemistry-I</label>
-            <span class="credits">2.5 Credits</span>
+        <div class="subject-group">
+          <div class="group-title">Applied Chemistry-I</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory</label><span class="credits">100 Marks | 2.0 Cr</span></div>
+            <input type="number" id="chem_th" placeholder="/100" min="0" max="100">
           </div>
-          <input type="number" id="chemistry" placeholder="Marks" min="0" max="100">
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab</label><span class="credits">25 Marks | 0.5 Cr</span></div>
+            <input type="number" id="chem_lab" placeholder="/25" min="0" max="25">
+          </div>
         </div>
 
-        <div class="subject-row">
-          <div class="sub-info">
-            <label for="eg">Engg. Graphics</label>
-            <span class="credits">3.0 Credits</span>
+        <div class="subject-group">
+          <div class="group-title">Engg. Graphics</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory</label><span class="credits">100 Marks | 2.0 Cr</span></div>
+            <input type="number" id="eg_th" placeholder="/100" min="0" max="100">
           </div>
-          <input type="number" id="eg" placeholder="Marks" min="0" max="100">
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab</label><span class="credits">25 Marks | 1.0 Cr</span></div>
+            <input type="number" id="eg_lab" placeholder="/25" min="0" max="25">
+          </div>
         </div>
 
-        <div class="subject-row">
-          <div class="sub-info">
-            <label for="bede">B.E.D.E.</label>
-            <span class="credits">3.0 Credits</span>
+        <div class="subject-group">
+          <div class="group-title">B.E.D.E.</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory</label><span class="credits">100 Marks | 2.0 Cr</span></div>
+            <input type="number" id="bede_th" placeholder="/100" min="0" max="100">
           </div>
-          <input type="number" id="bede" placeholder="Marks" min="0" max="100">
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab (TW + Oral)</label><span class="credits">50 Marks | 1.0 Cr</span></div>
+            <input type="number" id="bede_lab" placeholder="/50" min="0" max="50">
+          </div>
         </div>
+
+        <div class="subject-group">
+          <div class="group-title">C Programming</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory (CA)</label><span class="credits">25 Marks | 1.0 Cr</span></div>
+            <input type="number" id="cp_th" placeholder="/25" min="0" max="25">
+          </div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab (TW)</label><span class="credits">25 Marks | 1.0 Cr</span></div>
+            <input type="number" id="cp_lab" placeholder="/25" min="0" max="25">
+          </div>
+        </div>
+
+        <div class="subject-group">
+          <div class="group-title">Universal Human Values</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Theory (CA)</label><span class="credits">50 Marks | 2.0 Cr</span></div>
+            <input type="number" id="uhv" placeholder="/50" min="0" max="50">
+          </div>
+        </div>
+
+        <div class="subject-group">
+          <div class="group-title">Workshop-1</div>
+          <div class="subject-row">
+            <div class="sub-info"><label>Lab / Practice</label><span class="credits">50 Marks | 2.0 Cr</span></div>
+            <input type="number" id="workshop" placeholder="/50" min="0" max="50">
+          </div>
+        </div>
+
       </div>
 
       <button id="calcBtn" onclick="calculateSGPA()">Compute SGPA</button>
@@ -79,9 +129,6 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="Script1.js"></script>
 </body>
-
 </html>
-
-
