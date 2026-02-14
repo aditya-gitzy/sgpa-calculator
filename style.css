@@ -1,5 +1,5 @@
 :root {
-  /* Dark Theme Variables (Default) */
+  
   --primary: #38bdf8;
   --accent: #fbbf24;
   --bg: #030712;
@@ -11,7 +11,7 @@
 }
 
 [data-theme="light"] {
-  /* Light Theme Variables */
+
   --bg: #f1f5f9;
   --text: #0f172a;
   --sub-text: #475569;
@@ -68,13 +68,35 @@ header p { color: var(--sub-text); font-size: 0.9rem; margin-top: 5px; }
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
+
+.subject-group {
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.02); 
+  padding: 15px;
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+}
+
+.group-title {
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .subject-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--glass-border);
 }
+.subject-row:last-child {
+  border-bottom: none;
+}
+
 
 .sub-info { display: flex; flex-direction: column; }
 label { font-weight: 600; font-size: 0.95rem; }
